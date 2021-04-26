@@ -1,0 +1,46 @@
+Prerequistes: 
+
+- Text editor (VS Code, Notepad)
+- Web Browser
+
+TODOs
+
+1: Build the project 
+    - Creating the Folders
+    - Adding files
+    - Connecting files 
+
+2a: Introduction Section
+    - Image
+    - Heading / Name 
+    - Discribsion
+    - Button 
+
+2b: Demographic and Knowledge
+    - Discribtion
+    - Grid of 2 Coloum
+    - Image / Scale
+
+2c: Work Exp & Edu
+    - Grid of 2 Section  
+    - Header and Discrbtion
+
+2d: Lang & Interest
+    - Images
+    - Header & Discribsion
+    - Logos 
+
+3: Contact-me Page
+
+3a: Introduction Section
+    - Image
+    - Heading / Name 
+    - Discribsion
+    - Button 
+
+3b: Contact Details
+    -   Database link
+    -   Header and Discribtion
+    -   Title
+    -   Boxes to Enter Details
+
