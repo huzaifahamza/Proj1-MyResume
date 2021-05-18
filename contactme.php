@@ -1,11 +1,12 @@
 <?php include 'config.php'; 
-$err_msg = $suc_msg = '';
+$er_msg = $suc_msg = '';
+$name = $email = $mobile = $message = "";
 ?>
 
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title>My Resume</title>
+    <title>Contact Me</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/contactme.css">
@@ -43,41 +44,42 @@ $err_msg = $suc_msg = '';
                     <br>
                     <input style="width: 100%;height: 30px;border: 1px solid #ccc;border-radius: 5px" 
                      placeholder="Full Name" type="text" name= "name" 
-                     value="<?php htmlspecialchars($name);?>">
+                     value="<?php echo htmlspecialchars($value_name);?>">
                     <div class="red-text" style="color:red;"><?php echo $error_name;?></div>
                     <br>
-
+                    
                     <lable style="text-shadow: 0 2px 0 #fff; font-size: 24px; font-weight: bold;">
                     Mobile:</lable>
                     <br> 
                     <input style="width: 100%;height: 30px;border: 1px solid #ccc;border-radius: 5px" 
                      placeholder="Mobile No: +91.........." type="number" name="mobile" 
-                     value="<?php echo htmlspecialchars($mobile)?>">
+                     value="<?php echo htmlspecialchars($value_number);?>">
                      <div class="red-text" style="color:red;"><?php echo $error_number;?></div>
                     <br>
 
                     <lable style="text-shadow: 0 2px 0 #fff; font-size: 24px; font-weight: bold;">
                     Email: </lable>
                     <br> 
-                    <input style="width: 100%;height: 30px;border: 1px solid #ccc;border-radius: 5px" 
-                     placeholder="Email Address" type="text" name="email" 
-                     value="<?php echo htmlspecialchars($email)?>">
+                    <input style="width: 100%;height: 30px;border: 1px solid #ccc;border-radius: 5px"
+                    placeholder="Email Address" type="text" name="email" 
+                    value="<?php echo htmlspecialchars($value_email);?>">
                      <div class="red-text" style="color:red;"><?php echo $error_email;?></div>
                     <br>
 
                     <lable style="text-shadow: 0 2px 0 #fff; font-size: 24px; font-weight: bold;">
                     Message: </lable>
                     <br> 
-                    <textarea style="width: 100%;border: 1px solid #ccc;border-radius: 5px" 
-                    placeholder="Enter your message" name="message" rows="5" cols="40" 
-                    value="<?php echo htmlspecialchars($message)?>"> </textarea>
+                    <textarea style="width: 100%;border: 1px solid #ccc;border-radius: 5px"
+                    placeholder="Enter your your message" name="message" rows="5" cols="40"
+                    value="<?php echo htmlspecialchars($value_message);?>">
+                    </textarea>
                     <div class="red-text" style="color:red;"><?php echo $error_message;?></div>
                     <br>
- 
                     <button type="sumit" formaction="index.html">Back</button>
-                    <input type="submit" value="submit">
+                    <input type="submit" value="Submit">
                     <br>
-                    <div class="red-text" style="color:red;"><?php echo $err_msg, $suc_msg;?></div>
+                    <div class="red-text" style="color:red;"><?php echo $er_msg;?> </div>
+
                     </form>
                      
             </div>
