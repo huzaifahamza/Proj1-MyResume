@@ -1,0 +1,26 @@
+login table database changes 
+create a table
+
+alter timestamp
+alter table signin modify column log timestamp default now();
+
+insert value: 
+insert into  signin (username, password) value ('hozy','hozy');
+
+add salt: 
+alter table signin add salt timestamp default now();
+
+add hash_algorithm:
+alter table signin add hash_algorithm varchar(45) default 'md5';
+
+update to password to md5
+update signin set password=md5('password');
+
+update salt change to md5:
+alter table signin modify salt varchar(45) DEFAULT "default_salt";
+update signin set salt=md5('default_salt') where sign_id=1;
+
+update signin set password=md5('hozy_default_salt') where sign_id=1;
+
+add another user to understand the flow via php;
+insert into signin (username, password) values ('user','user');
